@@ -17,7 +17,7 @@ Arrays::Arrays()
   heapArrayPartial[1][1] = 7;
 
 
-  heapArray = new int* [2]; //Note the astrix after type int // this is a double pointer
+  heapArray = new int* [2]; //Note the astrix after type int // heapArray is a double pointer and heapArray again points to a pointer
   heapArray[0] = new int[2];
   heapArray[1] = new int[2];
 

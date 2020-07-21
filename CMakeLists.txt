@@ -9,9 +9,10 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_subdirectory(Section5)
 add_subdirectory(Section6)
+add_subdirectory(Section7)
 
 
-list(APPEND CHAPTERS Section5 Section6)
+list(APPEND CHAPTERS Section5 Section6 Section7)
 
 add_executable(DS_AL_Udemy main.cpp)
 
