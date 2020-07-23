@@ -35,6 +35,11 @@ int main() {
     ArrayADT arrADT;
     arrADT.getArrayElements();
 
+    int index = arrADT.binarySearchRecursive(20);
+    std::cout<<"The search element is at "<<index<<std::endl;
+
+    arrADT.displayElements();
+
 
     return 0;
 
