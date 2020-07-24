@@ -20,6 +20,17 @@ public:
     int binarySearch(int element);
     int binarySearchRecursive(int element);
     int swap(int originIndex, int destIndex);
+    int get(int index);
+    void set(int index,int element);
+    int min();
+    int max();
+    int total();
+    int totalRecursive();
+    void reverse(bool useAuxiliary);
+    void leftShift();
+    void rightShift();
+    void leftRotate();
+    void rightRotate();
 private:
 
     int* arrayObj;
@@ -27,6 +38,7 @@ private:
     int length=0;
 
     int recursiveBinarySearch(int element,int lBound, int uBound);
+    int recursiveSum(int index);
 
 
 };

@@ -27,7 +27,6 @@ void ArrayADT::getArrayElements() {
         std::cin>>arrayObj[i];
     }
 
-    displayElements();
 }
 
 void ArrayADT::displayElements() {
@@ -189,18 +188,127 @@ int ArrayADT::binarySearchRecursive(int element) {
 
 int ArrayADT::recursiveBinarySearch(int element, int lBound, int uBound) {
     int mid = lBound + uBound / 2;
-    if(arrayObj[mid] == element){
-        return mid;
-    } else {
-        if(arrayObj[mid] > element){
-            uBound = mid - 1;
-            return recursiveBinarySearch(element, lBound, uBound);
+    if(lBound < uBound) {
+        if (arrayObj[mid] == element) {
+            return mid;
         } else {
-            lBound = mid + 1;
-            return recursiveBinarySearch(element, lBound, uBound);
+            if (arrayObj[mid] > element) {
+                uBound = mid - 1;
+                return recursiveBinarySearch(element, lBound, uBound);
+            } else {
+                lBound = mid + 1;
+                return recursiveBinarySearch(element, lBound, uBound);
+            }
         }
     }
 
+}
+
+int ArrayADT::get(int index) {
+    if(index < 0 || index > length) {
+        std::cout<<"index out of bounds";
+        return -1;
+    }
+    return arrayObj[index];
+}
+
+void ArrayADT::set(int index, int element) {
+    if(index < 0 || index > length) {
+        std::cout<<"index out of bounds";
+        return;
+    }
+    arrayObj[index] = element;
+}
+
+int ArrayADT::min() {
+    int minVal = arrayObj[0];
+    for (int i = 1; i < length; ++i) {
+        if(arrayObj[i] < minVal){
+            minVal = arrayObj[i];
+        }
+    }
+    return minVal;
+}
+
+int ArrayADT::max() {
+    int maxVal = arrayObj[0];
+    for (int i = 1; i < length; ++i) {
+        if(arrayObj[i] > maxVal){
+            maxVal = arrayObj[i];
+        }
+    }
+    return maxVal;
+}
+
+int ArrayADT::total() {
+    int sum = 0;
+    for (int i = 0; i < length; ++i) {
+        sum += arrayObj[i];
+    }
+    return sum;
+}
+
+int ArrayADT::totalRecursive() {
+    return recursiveSum(length);
+}
+
+int ArrayADT::recursiveSum(int index) {
+    if(index < 0) {
+        return 0;
+    } else {
+        return recursiveSum(index-1) + arrayObj[index];
+    }
+}
+
+void ArrayADT::reverse(bool useAuxiliary) {
+    if(useAuxiliary) {  int temp[length];
+        for(int i=0,j=length-1;i >=0;i++,j--){
+            temp[i] = arrayObj[j];
+        }
+        for(int i=0;i<length;i++){
+            arrayObj[i] = temp[i];
+        }
+    } else {
+        for(int i=0,j=length-1;i<j;i++,j--){
+            int temp = arrayObj[i];
+            arrayObj[i] = arrayObj[j];
+            arrayObj[j] = temp;
+        }
+    }
+
+}
+
+void ArrayADT::leftShift() {
+    for(int i=0;i<length-1;i++){
+        arrayObj[i] = arrayObj[i+1];
+    }
+    arrayObj[length-1]=0;
+    //length--; //Actual left shift has to delete the first element
+}
+
+void ArrayADT::rightShift() {
+    for(int i=length-1;i>0;i--){
+        arrayObj[i] = arrayObj[i-1];
+    }
+    leftShift(); //FIXME: workaround to make last element to 0
+    //length--;  //Actual right shift has to delete the last element
+}
+
+void ArrayADT::leftRotate() {
+    int temp =arrayObj[0];
+    for(int i=1;i<length-1;i++){
+        arrayObj[i] = arrayObj[i+1];
+    }
+    arrayObj[length-1] = temp;
+}
+
+void ArrayADT::rightRotate() {
+
+    int temp = arrayObj[length-1];
+    for(int i=length-1;i>0;i--){
+        arrayObj[i] = arrayObj[i-1];
+    }
+    arrayObj[0] = temp;
 }
 
 
