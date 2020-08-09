@@ -7,12 +7,11 @@ set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 11)
 
-add_subdirectory(Section5)
-add_subdirectory(Section6)
-add_subdirectory(Section7)
+list(APPEND CHAPTERS Section5 Section6 Section7 Section8)
 
-
-list(APPEND CHAPTERS Section5 Section6 Section7)
+foreach(chapter  ${CHAPTERS})
+    add_subdirectory(${chapter})
+endforeach()
 
 add_executable(DS_AL_Udemy main.cpp)
 

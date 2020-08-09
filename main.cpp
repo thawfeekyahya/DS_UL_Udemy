@@ -2,6 +2,7 @@
 #include "Recursion.h"
 #include "Arrays.h"
 #include "ArrayADT.h"
+#include "udstrings.h"
 
 int main() {
     std::cout<<"Data Structures and Alogorithms By Abdul - Udemy"<<std::endl;
@@ -32,8 +33,8 @@ int main() {
 //    ar.printHeapArray();
 //    ar.printStackArray();
 
-    ArrayADT arrADT;
-    arrADT.getArrayElements();
+    // ArrayADT arrADT;
+    // arrADT.getArrayElements();
 
 //    int index = arrADT.binarySearchRecursive(20);
 //    std::cout<<"The search element is at "<<index<<std::endl;
@@ -42,13 +43,15 @@ int main() {
 //    arrADT.set(1,100);
 //    std::cout<<"The element at 1"<<arrADT.get(1)<<std::endl;
 
-    arrADT.displayElements();
+    // arrADT.displayElements();
 
-    arrADT.rightRotate();
-    arrADT.rightRotate();
-    arrADT.rightRotate();
+    // arrADT.rightRotate();
+    // arrADT.rightRotate();
+    // arrADT.rightRotate();
 
-    arrADT.displayElements();
+    // arrADT.displayElements();
+
+    UDStrings str;
 
 
     return 0;
