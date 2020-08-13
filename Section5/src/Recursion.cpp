@@ -102,6 +102,16 @@ long Recursion::tailerSeries(int n, int x)
     }
 }
 
+int functionCalled=1;
+void Recursion::recursiveLoop(int loopCount) 
+{
+    std::cout<<"This function has been called for -> "<<functionCalled++;
+    std::cout<<" and has a loopCount of "<<loopCount<<std::endl;
+    for(int i=0;i<loopCount;i++){
+        std::cout<<"In loop "<<i<<std::endl;
+        recursiveLoop(loopCount-1);
+    }
+}
 
 
 

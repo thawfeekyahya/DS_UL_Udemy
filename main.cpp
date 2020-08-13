@@ -10,7 +10,8 @@ int main() {
     //Intro<int> i(5,3);
     //i.add(5,3);
 
-//    Recursion r;
+   Recursion r;
+//    r.recursiveLoop(3);
 //    std::cout<< "Final Result "<< r.recurse(5)<<std::endl;
 //
 //    std::cout<<" Value 2 to the power 5 is -> "<<r.pow(5,2)<<std::endl;
@@ -50,8 +51,11 @@ int main() {
     // arrADT.rightRotate();
 
     // arrADT.displayElements();
-
-    UDStrings str;
+    // UDStrings str;
+    int i=0;
+    while(i++ < 3){
+        std::cout<<"hello"<<std::endl;
+    } 
 
 
     return 0;
