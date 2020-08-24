@@ -8,7 +8,7 @@ set(CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 11)
 
-list(APPEND CHAPTERS Section5 Section6 Section7 Section8)
+list(APPEND CHAPTERS Section5 Section6 Section7 Section8 Section11)
 
 foreach(chapter  ${CHAPTERS})
     add_subdirectory(${chapter})

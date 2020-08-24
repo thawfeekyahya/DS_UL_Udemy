@@ -3,6 +3,7 @@
 #include "Arrays.h"
 #include "ArrayADT.h"
 #include "udstrings.h"
+#include "LinkedList.h"
 
 int main() {
     std::cout<<"Data Structures and Alogorithms By Abdul - Udemy"<<std::endl;
@@ -52,12 +53,11 @@ int main() {
 
     // arrADT.displayElements();
     // UDStrings str;
-    int i=0;
-    while(i++ < 3){
-        std::cout<<"hello"<<std::endl;
-    } 
-
-
+    
+    LinkedList l;
+    l.display();
+    std::cout<<"Found -> "<<l.getValueAndMoveToHead(2)<<std::endl;
+    l.display();
     return 0;
 
 
