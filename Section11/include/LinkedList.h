@@ -12,12 +12,16 @@ class LinkedList {
 		bool getValueAndMoveToHead(int value);
 		void recusriveDisplayMain();
 		int recursiveCountMain();
+		bool insert(int value,int pos);
 	private:
 		Node* head;
 		void recursiveDisplay(Node* n);
 		int recursiveCount(Node* n);
 		
 };
+
+
+
 
 
 

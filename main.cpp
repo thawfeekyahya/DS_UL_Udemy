@@ -4,6 +4,7 @@
 #include "ArrayADT.h"
 #include "udstrings.h"
 #include "LinkedList.h"
+#include "stack.h"
 
 int main() {
     std::cout<<"Data Structures and Alogorithms By Abdul - Udemy"<<std::endl;
@@ -56,8 +57,10 @@ int main() {
     
     LinkedList l;
     l.display();
-    std::cout<<"Found -> "<<l.getValueAndMoveToHead(2)<<std::endl;
+    l.insert(20,4);
     l.display();
+
+    Stack s;
     return 0;
 
 

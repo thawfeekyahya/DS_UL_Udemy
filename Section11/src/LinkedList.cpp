@@ -32,6 +32,8 @@ void LinkedList::recursiveDisplay(Node* n)
     }
 }
 
+
+
 void LinkedList::recusriveDisplayMain() 
 {
 	recursiveDisplay(head);
@@ -96,4 +98,21 @@ bool LinkedList::getValueAndMoveToHead(int value)
     return false;
 }
 
-//TODO: Remove this line //Next insert in linked list
+bool LinkedList::insert(int value,int pos) 
+{
+    Node* t = new Node(value);
+    Node* p = head;
+    int count = getCount();
+
+    if(pos == 0){
+        t->setNext(head);
+        head = t;
+    } else if(pos > 0 && pos <= count) {
+        for(int i=0;i<pos-1;i++) {
+            p = p->getNext();
+        }
+        t->setNext(p->getNext());
+        p->setNext(t);
+    }
+    
+}
