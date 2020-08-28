@@ -54,13 +54,22 @@ int main() {
 
     // arrADT.displayElements();
     // UDStrings str;
-    
-    LinkedList l;
-    l.display();
-    l.insert(20,4);
-    l.display();
 
     Stack s;
+    s.push(1);
+    s.push(2);
+    s.push(3);
+    s.push(4);
+    s.push(5);
+    s.push(6);
+    s.dispaly();
+    std::cout<<"Peeked elemennt"<<s.peek(3)<<std::endl;
+    s.dispaly();
+    s.pop();
+    s.dispaly();
+
+
+  
     return 0;
 
 
