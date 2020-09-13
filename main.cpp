@@ -5,6 +5,7 @@
 #include "udstrings.h"
 #include "LinkedList.h"
 #include "stack.h"
+#include "Queue.h"
 
 int main() {
     std::cout<<"Data Structures and Alogorithms By Abdul - Udemy"<<std::endl;
@@ -55,21 +56,14 @@ int main() {
     // arrADT.displayElements();
     // UDStrings str;
 
-    Stack s;
-    s.push(1);
-    s.push(2);
-    s.push(3);
-    s.push(4);
-    s.push(5);
-    s.push(6);
-    s.dispaly();
-    std::cout<<"Peeked elemennt"<<s.peek(3)<<std::endl;
-    s.dispaly();
-    s.pop();
-    s.dispaly();
+    Queue q;
 
-
-  
+    q.enqueue(1);
+    q.enqueue(2);
+    q.enqueue(3);
+    q.display();
+    q.dequeue();
+    q.display();
     return 0;
 
 

@@ -16,8 +16,15 @@ private:
 	int* data;
 };
 
-
-
+/*
+* Not doing , only concept
+class StackLinkedList {
+public:
+	StackLinkedList();
+private:
+	int data;
+	StackLinkedList* next;
+};*/
 
 
 
