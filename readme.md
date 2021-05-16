@@ -1,60 +1,60 @@
 Chapter Details 
 
 + Section 5
- - Recursion
+  - Recursion
 
 + Section 6
- - Array 
+  - Array 
 
 + Section 7
- - Array ADT (Abstract Data Type)
+  - Array ADT (Abstract Data Type)
 
 + Section 8
- - Strings
+  - Strings
 
 + Section 9
- - Matrices
+  - Matrices
 
 + Section 10
- - Sparse and Polynomial Matrices
+  - Sparse and Polynomial Matrices
 
 + Section 11
- - Linked Lists
+  - Linked Lists
 
 + Section 12
- - Sparse and Polynomial Matrices using Linked list
+  - Sparse and Polynomial Matrices using Linked list
 
 + Section 13
- - Stack
+  - Stack
 
 + Section 14 
- - Queues
+  - Queues
 
 + Section 15
- - Trees
+  - Trees
 
 + Section 16
- - Binary Search Trees
+  - Binary Search Trees
 
 + Section 17
- - AVL Trees
+  - AVL Trees
 
 + Section 18
- - Search Tees
+  - Search Tees
 
 + Section 19
- - Heap
+  - Heap
 
 + Section 20
- - Sorting Techniques
+  - Sorting Techniques
 
 + Section 21
- - Hasing Techniques
+  - Hasing Techniques
 
 + Section 22
- - Graphs
+  - Graphs
 
 + Section 23
- - Asymptotic Notation 
+  - Asymptotic Notation 
 
 
