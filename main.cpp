@@ -8,62 +8,26 @@
 #include "Queue.h"
 
 int main() {
-    std::cout<<"Data Structures and Alogorithms By Abdul - Udemy"<<std::endl;
 
-    //Intro<int> i(5,3);
-    //i.add(5,3);
+    int array[5] = {1,2,3,4,5};
 
-   Recursion r;
-//    r.recursiveLoop(3);
-//    std::cout<< "Final Result "<< r.recurse(5)<<std::endl;
-//
-//    std::cout<<" Value 2 to the power 5 is -> "<<r.pow(5,2)<<std::endl;
-//
-//    std::cout<<" Factorial of 5 is ->  -> "<<r.factorial(5)<<std::endl;
+    //sum = 7;
 
-//    std::cout<<"Fibonacci series -> "<<r.fibbo(8)<<std::endl;
+   // QPair<int,int> matched;
 
+   int k =0;
 
-    // r.headRecursion(5);
-    // std::cout<<std::endl;
-    // r.tailRecursion(5);
-    // std::cout<<std::endl;
-    // r.treeRecursion(5);
+    for(int i=0;i<5;i++) {
+        std::cout<<k++<<std::endl;
+        for(int j=0;j<5;j++) {
+            std::cout<<k++<<std::endl;
+            int sum = array[i] + array[j];
+            if (sum == 7) {
+                std::cout<<"Match found on indexes "<<i<<","<<j<<std::endl;
+            }
+        }
+    }
 
-    // long tailSeriestResult = r.tailerSeries(10,1);
-
-//    Arrays ar;
-//    ar.printHeapArrayPartial();
-//    ar.printHeapArray();
-//    ar.printStackArray();
-
-    // ArrayADT arrADT;
-    // arrADT.getArrayElements();
-
-//    int index = arrADT.binarySearchRecursive(20);
-//    std::cout<<"The search element is at "<<index<<std::endl;
-//
-//
-//    arrADT.set(1,100);
-//    std::cout<<"The element at 1"<<arrADT.get(1)<<std::endl;
-
-    // arrADT.displayElements();
-
-    // arrADT.rightRotate();
-    // arrADT.rightRotate();
-    // arrADT.rightRotate();
-
-    // arrADT.displayElements();
-    // UDStrings str;
-
-    Queue q;
-
-    q.enqueue(1);
-    q.enqueue(2);
-    q.enqueue(3);
-    q.display();
-    q.dequeue();
-    q.display();
     return 0;
 
 
