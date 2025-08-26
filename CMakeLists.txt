@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 11)
 
 #Library name is same as folder nanme
-list(APPEND CHAPTERS Section5 Section6 Section7 Section8 Section11 Section13 Section14 Section15 Section20)
+list(APPEND CHAPTERS Section5 Section6 Section7 Section8 Section11 Section13 Section14 Section15 Section20 Section21)
 
 foreach(chapter  ${CHAPTERS})
     add_subdirectory(${chapter})

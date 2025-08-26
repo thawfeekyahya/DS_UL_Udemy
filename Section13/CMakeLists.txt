@@ -2,8 +2,12 @@ set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 set(HDR_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 file(GLOB SRCS "${SRC_DIR}/*.cpp")
-add_library(Section13 ${SRCS})
-target_include_directories(Section13 PUBLIC ${HDR_DIR})
+
+cmake_path(GET CMAKE_CURRENT_SOURCE_DIR FILENAME FOLDER_NAME)
+
+add_library(${FOLDER_NAME} ${SRCS})
+
+target_include_directories(${FOLDER_NAME} PUBLIC ${HDR_DIR})
 
 file(GLOB HDRS CONFIGURE_DEPENDS "${HDR_DIR}/*.h")
 source_group(TREE ${HDR_DIR} PREFIX "Section13 header files" FILES ${HDRS})
